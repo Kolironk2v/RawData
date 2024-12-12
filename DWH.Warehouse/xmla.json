@@ -1,0 +1,1173 @@
+{
+  "name": "{{Dataset_Name}}",
+  "compatibilityLevel": 1604,
+  "model": {
+    "name": "{{Dataset_Name}}",
+    "culture": "en-US",
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Attendees",
+        "sourceLineageTag": "[IAC].[Attendees]",
+        "columns": [
+          {
+            "name": "AttendeeKey",
+            "dataType": "int64",
+            "sourceColumn": "AttendeeKey",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "AttendeeKey",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "order_id",
+            "dataType": "int64",
+            "sourceColumn": "order_id",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "order_id",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "attendee_first_name",
+            "dataType": "string",
+            "sourceColumn": "attendee_first_name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "attendee_first_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "attendee_last_name",
+            "dataType": "string",
+            "sourceColumn": "attendee_last_name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "attendee_last_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "attendee_email",
+            "dataType": "string",
+            "sourceColumn": "attendee_email",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "attendee_email",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "phone_number",
+            "dataType": "string",
+            "sourceColumn": "phone_number",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "phone_number",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "purchaser_city",
+            "dataType": "string",
+            "sourceColumn": "purchaser_city",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "purchaser_city",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "purchaser_country",
+            "dataType": "string",
+            "sourceColumn": "purchaser_country",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "purchaser_country",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Attendees",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "IAC"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "sourceLineageTag": "[IAC].[Date]",
+        "columns": [
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "DateKey",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Full Date",
+            "dataType": "string",
+            "sourceColumn": "Full Date",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Full Date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Date",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "Date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Date",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "IAC"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Events",
+        "sourceLineageTag": "[IAC].[Events]",
+        "columns": [
+          {
+            "name": "EventKey",
+            "dataType": "int64",
+            "sourceColumn": "EventKey",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "EventKey",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "event_name",
+            "dataType": "string",
+            "sourceColumn": "event_name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "event_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "event_location",
+            "dataType": "string",
+            "sourceColumn": "event_location",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "event_location",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "event_start_date",
+            "dataType": "dateTime",
+            "sourceColumn": "event_start_date",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "event_start_date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "event_start_time",
+            "dataType": "dateTime",
+            "sourceColumn": "event_start_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "event_start_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "event_timezone",
+            "dataType": "string",
+            "sourceColumn": "event_timezone",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "event_timezone",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Events",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "IAC"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Sales",
+        "sourceLineageTag": "[IAC].[Sales]",
+        "columns": [
+          {
+            "name": "OrderId",
+            "dataType": "int64",
+            "sourceColumn": "OrderId",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "OrderId",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "EventKey",
+            "dataType": "int64",
+            "sourceColumn": "EventKey",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "EventKey",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AttendeeKey",
+            "dataType": "int64",
+            "sourceColumn": "AttendeeKey",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "AttendeeKey",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TicketKey",
+            "dataType": "int64",
+            "sourceColumn": "TicketKey",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "TicketKey",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ticket_quantity",
+            "dataType": "int64",
+            "sourceColumn": "ticket_quantity",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "ticket_quantity",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ticket_price",
+            "dataType": "decimal",
+            "sourceColumn": "ticket_price",
+            "sourceProviderType": "decimal",
+            "sourceLineageTag": "ticket_price",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "order_time",
+            "dataType": "dateTime",
+            "sourceColumn": "order_time",
+            "formatString": "General Date",
+            "sourceProviderType": "time",
+            "sourceLineageTag": "order_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "DateKey",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Sales",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "IAC"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "Tickets",
+        "sourceLineageTag": "[IAC].[Tickets]",
+        "columns": [
+          {
+            "name": "TicketKey",
+            "dataType": "int64",
+            "sourceColumn": "TicketKey",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "TicketKey",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ticket_type",
+            "dataType": "string",
+            "sourceColumn": "ticket_type",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ticket_type",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "currency",
+            "dataType": "string",
+            "sourceColumn": "currency",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "currency",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "description",
+            "dataType": "string",
+            "sourceColumn": "description",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "description",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ticket_price",
+            "dataType": "decimal",
+            "sourceColumn": "ticket_price",
+            "sourceProviderType": "decimal",
+            "sourceLineageTag": "ticket_price",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "Tickets",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "IAC"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "shishi_israeli_raw_data",
+        "isHidden": true,
+        "sourceLineageTag": "[dbo].[shishi_israeli_raw_data]",
+        "columns": [
+          {
+            "name": "order_id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "order_id",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "order_id",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "order_date",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "order_date",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "order_date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "attendee_first_name",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "attendee_first_name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "attendee_first_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "attendee_last_name",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "attendee_last_name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "attendee_last_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "attendee_email",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "attendee_email",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "attendee_email",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "phone_number",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "phone_number",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "phone_number",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "purchaser_city",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "purchaser_city",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "purchaser_city",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "purchaser_state",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "purchaser_state",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "purchaser_state",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "purchaser_country",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "purchaser_country",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "purchaser_country",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "event_name",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "event_name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "event_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "event_id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "event_id",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "event_id",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "event_start_date",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "event_start_date",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "sourceLineageTag": "event_start_date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "event_start_time",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "event_start_time",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "event_start_time",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "event_timezone",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "event_timezone",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "event_timezone",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "event_location",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "event_location",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "event_location",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ticket_quantity",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "ticket_quantity",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "ticket_quantity",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ticket_tier",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "ticket_tier",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ticket_tier",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ticket_type",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "ticket_type",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ticket_type",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "currency",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "currency",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "currency",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ticket_price",
+            "dataType": "double",
+            "isHidden": true,
+            "sourceColumn": "ticket_price",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "ticket_price",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "buyer_first_name",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "buyer_first_name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "buyer_first_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "buyer_last_name",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "buyer_last_name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "buyer_last_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "buyer_email",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "buyer_email",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "buyer_email",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "shishi_israeli_raw_data",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "test",
+        "isHidden": true,
+        "sourceLineageTag": "[IAC].[test]",
+        "columns": [
+          {
+            "name": "CustID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "CustID",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "CustID",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "order_id",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "order_id",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "order_id",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "attendee_first_name",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "attendee_first_name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "attendee_first_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "attendee_last_name",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "attendee_last_name",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "attendee_last_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "attendee_email",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "attendee_email",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "attendee_email",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "phone_number",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "phone_number",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "phone_number",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "purchaser_city",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "purchaser_city",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "purchaser_city",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "purchaser_state",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "purchaser_state",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "purchaser_state",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "purchaser_country",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "purchaser_country",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "purchaser_country",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "rownum",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "rownum",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "rownum",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "test",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "IAC"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "11bdfb27d9141a06efbd7f6b1a094b75",
+        "fromTable": "Sales",
+        "fromColumn": "AttendeeKey",
+        "toTable": "Attendees",
+        "toColumn": "AttendeeKey",
+        "relyOnReferentialIntegrity": true
+      },
+      {
+        "name": "37b226996beb9cec1b6dcd15dcea1181",
+        "fromTable": "Sales",
+        "fromColumn": "TicketKey",
+        "toTable": "Tickets",
+        "toColumn": "TicketKey",
+        "relyOnReferentialIntegrity": true
+      },
+      {
+        "name": "600ea7aeeb3969466b6ebfc23aee122e",
+        "fromTable": "Sales",
+        "fromColumn": "EventKey",
+        "toTable": "Events",
+        "toColumn": "EventKey",
+        "relyOnReferentialIntegrity": true
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": "let\n    database = {{TDS_Endpoint}}\nin\n    database\n"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "SourceLineageTagType",
+        "value": "DatabaseFullyQualifiedName"
+      }
+    ]
+  }
+}
