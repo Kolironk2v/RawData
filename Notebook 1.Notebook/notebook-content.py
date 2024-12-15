@@ -70,14 +70,14 @@ raw_df.write.parquet(r"Files/raw_data",mode="overwrite")
 
 file_loc = 'Files/raw_data'
 
-raw_df = spark.read.parquet(file_loc)
+df = spark.read.parquet(file_loc)
 
 new_columns_list = list(
     map(lambda x: x.strip().replace('-', '').replace('“', '').replace(')', '').replace('(', '').replace('/',
                                                                                                         '_').replace(
         '.', '').replace(':', '').replace(',', '').replace(' ', '_').replace('__', '_').lower(), df.columns))
 
-raw_df = raw_df.toDF(*new_columns_list)
+raw_df = df.toDF(*new_columns_list)
 display(raw_df)
 # df.write.parquet(r"Files/raw_data/Bosnia/toDF",mode="overwrite") 
 
