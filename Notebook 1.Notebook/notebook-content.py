@@ -41,7 +41,9 @@ display(raw_df)
 
 # META {
 # META   "language": "python",
-# META   "language_group": "synapse_pyspark"
+# META   "language_group": "synapse_pyspark",
+# META   "frozen": true,
+# META   "editable": false
 # META }
 
 # CELL ********************
@@ -52,8 +54,14 @@ raw_df.printSchema()
 
 # META {
 # META   "language": "python",
-# META   "language_group": "synapse_pyspark"
+# META   "language_group": "synapse_pyspark",
+# META   "frozen": true,
+# META   "editable": false
 # META }
+
+# MARKDOWN ********************
+
+# gfgf
 
 # CELL ********************
 
@@ -90,7 +98,22 @@ display(raw_df)
 
 # CELL ********************
 
-raw_df.write.format("delta").mode("overwrite").saveAsTable("shishi_israeli_raw_data")
+from pyspark.sql.functions import *
+
+display(raw_df.withColumn("year", to_timestamp(raw_df["order_date"])))
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark",
+# META   "frozen": true,
+# META   "editable": false
+# META }
+
+# CELL ********************
+
+raw_df.write.format("delta").mode("overwrite").saveAsTable("shishi_israeli_raw_data_pipe")
 
 # METADATA ********************
 
