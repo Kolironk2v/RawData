@@ -1,0 +1,227 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.60\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "84b21189de9875420054",
+      "config": "{}",
+      "name": "2bbe4ca032bd0026ad80"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "IMG-20241210-WA00271441639960077854.jpg",
+            "path": "IMG-20241210-WA00271441639960077854.jpg",
+            "type": 100
+          },
+          {
+            "name": "IMG-20241210-WA00273872183899956294.jpg",
+            "path": "IMG-20241210-WA00273872183899956294.jpg",
+            "type": 100
+          },
+          {
+            "name": "IMG-20241210-WA002740351535586821075.jpg",
+            "path": "IMG-20241210-WA002740351535586821075.jpg",
+            "type": 100
+          },
+          {
+            "name": "iac_logo2202564654948651.jpg",
+            "path": "iac_logo2202564654948651.jpg",
+            "type": 100
+          },
+          {
+            "name": "iac_logo30650457928694874.jpg",
+            "path": "iac_logo30650457928694874.jpg",
+            "type": 100
+          },
+          {
+            "name": "iac_logo49351103269910945.jpg",
+            "path": "iac_logo49351103269910945.jpg",
+            "type": 100
+          },
+          {
+            "name": "iac_logo8272659160296183.jpg",
+            "path": "iac_logo8272659160296183.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.5}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"52D\"}}}}}],\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}]}}",
+      "displayName": "Event Revenue",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "0c15bf013a956112687c",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"12c048119c4d2d509d45\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.42857142857143,\"y\":24.28571428571429,\"z\":0,\"width\":1218.5714285714287,\"height\":301.42857142857144,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Day\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Sales.Sales Amount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales Amount\"}},\"Function\":0},\"Name\":\"Sum(Sales.Sales Amount)\",\"NativeReferenceName\":\"Sum of Sales Amount\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Day\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"italic\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"gridlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Above'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"And\":{\"Left\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_43655d8a-f555-4993-8080-00917162304e\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2024L\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_43655d8a-f555-4993-8080-00917162304e\"}},\"Property\":\"Month\"}},\"Right\":{\"Literal\":{\"Value\":\"'December'\"}}}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_43655d8a-f555-4993-8080-00917162304e\"}},\"Property\":\"Day\"}},\"Right\":{\"Literal\":{\"Value\":\"1L\"}}}}}}}]}},{\"properties\":{\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dashed'\"}}}}}],\"valueAxis\":[{\"properties\":{\"end\":{\"expr\":{\"Literal\":{\"Value\":\"600D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"gridlineTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"gridlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}},\"switchAxisPosition\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"y2Axis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"plotArea\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'iac_logo.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"iac_logo8272659160296183.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"91D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sales per Day'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 301.43,
+          "width": 1218.57,
+          "x": 21.43,
+          "y": 24.29,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"98d11a323989065419dd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":21.42857142857143,\"y\":347.14285714285717,\"z\":1000,\"width\":1237.142857142857,\"height\":358.5714285714286,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Day\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sales.Running Total\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Running Total\"},\"Name\":\"Sales.Running Total\",\"NativeReferenceName\":\"Running Total\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Date Day\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trend line 1'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"gridlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}},\"gridlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'dotted'\"}}},\"gridlineAutoScale\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"switchAxisPosition\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"end\":{\"expr\":{\"Literal\":{\"Value\":\"3300D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Above'\"}}},\"optimizeLabelDisplay\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelContainerMaxWidth\":{\"expr\":{\"Literal\":{\"Value\":\"207D\"}}},\"enableValueDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}},\"enableDetailDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"leaderLines\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"plotArea\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'iac_logo.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"iac_logo49351103269910945.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fill'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"91D\"}}}}}],\"lineStyles\":[{\"properties\":{\"areaShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Accumulative  Revenue'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 358.57,
+          "width": 1237.14,
+          "x": 21.43,
+          "y": 347.14,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'IMG-20241210-WA0027.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"IMG-20241210-WA002740351535586821075.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}}}}]}}",
+      "displayName": "Booking Time Trend",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "65174423d61e5e498032",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"cf94ebdb060e13539898\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34.285714285714285,\"y\":64.28571428571429,\"z\":0,\"width\":1211.4285714285716,\"height\":637.1428571428572,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sales.order_time (bins)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Sales.ticket_quantity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ticket_quantity\"}},\"Function\":0},\"Name\":\"Sum(Sales.ticket_quantity)\",\"NativeReferenceName\":\"Sum of ticket_quantity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"order_time (bins)\"},\"Name\":\"Sales.order_time (bins)\",\"NativeReferenceName\":\"order_time (bins)\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"order_time (bins)\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"italic\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"plotArea\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'iac_logo.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"iac_logo30650457928694874.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fill'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"79D\"}}}}}],\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Average line 1'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"Sum(Sales.ticket_quantity)\"}},\"Function\":1}}}},\"selector\":{\"metadata\":\"Sum(Sales.ticket_quantity)\",\"id\":\"1\"}}],\"dataPoint\":[{\"properties\":{\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"borderTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"borderColorMatchFill\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelOrientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"enableTitleDataLabel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tickets sales quantity by hour trend'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"25D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 637.14,
+          "width": 1211.43,
+          "x": 34.29,
+          "y": 64.29,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}],\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'IMG-20241210-WA0027.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"IMG-20241210-WA00273872183899956294.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}}}}]}}",
+      "displayName": "Attendees",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "6ebf29a04e5d3299710c",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"6f1a9c98e155260d1c4b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1001,\"width\":1280,\"height\":82.85714285714286,\"tabOrder\":1001}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(Events.event_name)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Events\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"event_name\"}},\"Function\":3},\"Name\":\"Min(Events.event_name)\",\"NativeReferenceName\":\"First event_name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.86,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1001.00
+        },
+        {
+          "config": "{\"name\":\"a1057810e1d6eb9b940b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.714285714285715,\"y\":334.28571428571433,\"z\":1000,\"width\":651.4285714285714,\"height\":385.7142857142857,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Attendees.purchaser_city\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Sales.ticket_quantity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"Attendees\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"purchaser_city\"},\"Name\":\"Attendees.purchaser_city\",\"NativeReferenceName\":\"purchaser_city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ticket_quantity\"}},\"Function\":0},\"Name\":\"Sum(Sales.ticket_quantity)\",\"NativeReferenceName\":\"Sum of ticket_quantity\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ticket_quantity\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ffffff'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top Attendees count by resident''s location'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sales\"}},\"Property\":\"ticket_quantity\"}},\"Function\":0}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ticket_quantity\"}},\"Function\":0}},\"Right\":{\"Literal\":{\"Value\":\"5L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 385.71,
+          "width": 651.43,
+          "x": 35.71,
+          "y": 334.29,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"edf8dcd00476d204424b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":731.4285714285714,\"y\":334.28571428571433,\"z\":0,\"width\":548.5714285714286,\"height\":385.7142857142857,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"filledMap\",\"projections\":{\"Category\":[{\"queryRef\":\"Attendees.purchaser_city\",\"active\":true}],\"Tooltips\":[{\"queryRef\":\"Sum(Sales.Sales Amount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Attendees\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"purchaser_city\"},\"Name\":\"Attendees.purchaser_city\",\"NativeReferenceName\":\"purchaser_city\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales Amount\"}},\"Function\":0},\"Name\":\"Sum(Sales.Sales Amount)\",\"NativeReferenceName\":\"Sum of Sales Amount\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'minColor'\"}}}},\"max\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'maxColor'\"}}}},\"nullColoringStrategy\":{\"strategy\":{\"expr\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 385.71,
+          "width": 548.57,
+          "x": 731.43,
+          "y": 334.29,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'IMG-20241210-WA0027.jpg'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"IMG-20241210-WA00271441639960077854.jpg\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.6}}}}}}}],\"outspace\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"url\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}}}]}}",
+      "displayName": "Event Summery",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "84b21189de9875420054",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0bc778c0b006b40b0d30\",\"layouts\":[{\"id\":0,\"position\":{\"x\":917.1428571428572,\"y\":351.42857142857144,\"z\":1000,\"width\":348.5714285714286,\"height\":358.5714285714286,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Tickets.ticket_type\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sales.Revenue % Total Event\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Tickets\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ticket_type\"},\"Name\":\"Tickets.ticket_type\",\"NativeReferenceName\":\"ticket_type\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Revenue % Total Event\"},\"Name\":\"Sales.Revenue % Total Event\",\"NativeReferenceName\":\"Revenue % Total Event\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Revenue % Total Event\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'BottomCenter'\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"percentageLabelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'preferInside'\"}}},\"overflow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'% Revenue by ticket type'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"underline\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 358.57,
+          "width": 348.57,
+          "x": 917.14,
+          "y": 351.43,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"212247f84220232e1163\",\"layouts\":[{\"id\":0,\"position\":{\"x\":917.1428571428572,\"y\":114.28571428571429,\"z\":2000,\"width\":348.5714285714286,\"height\":115.71428571428572,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Sales.Sales Amount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales Amount\"}},\"Function\":0},\"Name\":\"Sum(Sales.Sales Amount)\",\"NativeReferenceName\":\"Sum of Sales Amount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales Amount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 115.71,
+          "width": 348.57,
+          "x": 917.14,
+          "y": 114.29,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"607970e10b196cac7228\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":82.85714285714286,\"z\":3000,\"width\":1280,\"height\":14.285714285714286,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}},{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"19D\"}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 14.29,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 82.86,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"63227475ee5d0635c4e8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":917.1428571428572,\"y\":230.00000000000003,\"z\":5000,\"width\":348.5714285714286,\"height\":108.57142857142858,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"iac_logo2202564654948651.jpg\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'Outer'\"}}}}}],\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 108.57,
+          "width": 348.57,
+          "x": 917.14,
+          "y": 230.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"db980317da41b4d03b1d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":114.28571428571429,\"z\":0,\"width\":907.1428571428572,\"height\":595.7142857142858,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"Sales.Revenue\"},{\"queryRef\":\"Sum(Sales.ticket_quantity)\"},{\"queryRef\":\"Sum(Sales.ticket_price)\"},{\"queryRef\":\"Sales.Revenue % Total Event\"}],\"Rows\":[{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Month\",\"active\":true},{\"queryRef\":\"Date.Full Date\"},{\"queryRef\":\"Tickets.ticket_type\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Tickets\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Revenue\"},\"Name\":\"Sales.Revenue\",\"NativeReferenceName\":\"Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Revenue % Total Event\"},\"Name\":\"Sales.Revenue % Total Event\",\"NativeReferenceName\":\"% Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Full Date\"},\"Name\":\"Date.Full Date\",\"NativeReferenceName\":\"Full Date\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"ticket_type\"},\"Name\":\"Tickets.ticket_type\",\"NativeReferenceName\":\"ticket_type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ticket_quantity\"}},\"Function\":0},\"Name\":\"Sum(Sales.ticket_quantity)\",\"NativeReferenceName\":\"Tickets Qunt.\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ticket_price\"}},\"Function\":1},\"Name\":\"Sum(Sales.ticket_price)\",\"NativeReferenceName\":\"Avg. Per Ticket\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Date.Date.Variation.Date Hierarchy.Month\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_43655d8a-f555-4993-8080-00917162304e\"}},\"Property\":\"Month\"}}],\"isPinned\":true},{\"queryRefs\":[\"Date.Full Date\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Date\"}},\"Property\":\"Full Date\"}}],\"isPinned\":true},{\"queryRefs\":[\"Tickets.ticket_type\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"Sum(Sales.ticket_quantity)\":{\"displayName\":\"Tickets Qunt.\"},\"Sales.Revenue % Total Event\":{\"displayName\":\"% Sales\",\"formatString\":\"0%;-0%;0%\"},\"Sum(Sales.ticket_price)\":{\"displayName\":\"Avg. Per Ticket\",\"formatString\":\"0.00\"},\"Sales.Revenue\":{\"formatString\":\"\\\\$#,0.###############;(\\\\$#,0.###############);\\\\$#,0.###############\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"192.61986141656422D\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Tickets\"}},\"Property\":\"ticket_type\"}},\"Right\":{\"Literal\":{\"Value\":\"'Additional Adult Ticket'\"}}}}}]}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"118.11477480570446D\"}}}},\"selector\":{\"metadata\":\"Sales.Revenue\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"104.86466063445042D\"}}}},\"selector\":{\"metadata\":\"Sales.Revenue % Total Event\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"115.85943662694882D\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Events\"}},\"Property\":\"event_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'“Shishi Israeli” – Hanukkah spirit!-Philadelphia 2024'\"}}}}}],\"metadata\":\"Sales.Revenue\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"157.8571410117868D\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Events\"}},\"Property\":\"event_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'“Shishi Israeli” – Hanukkah spirit!-Philadelphia 2024'\"}}}}}],\"metadata\":\"Sum(Sales.ticket_quantity)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"167.71452324526652D\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Events\"}},\"Property\":\"event_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'“Shishi Israeli” – Hanukkah spirit!-Philadelphia 2024'\"}}}}}],\"metadata\":\"Sum(Sales.ticket_price)\"}}],\"grid\":[{\"properties\":{\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"valuesOnRow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"italic\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"wordWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"titleAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Left'\"}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"rowHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}},\"showExpandCollapseButtons\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"expandCollapseButtonsColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.4}}}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"columnTotal\":[{\"properties\":{}}],\"subTotals\":[{\"properties\":{\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"perRowLevel\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotalsPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'Bottom'\"}}},\"rowSubtotalsLabel\":{\"expr\":{\"Literal\":{\"Value\":\"'Total'\"}}}}}],\"general\":[{\"properties\":{\"layout\":{\"expr\":{\"Literal\":{\"Value\":\"'Tabular'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#ffffff'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'AlternatingRowsNew'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 595.71,
+          "width": 907.14,
+          "x": 0.00,
+          "y": 114.29,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"dc8cfe2f27e1c779505d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":4000,\"width\":1280,\"height\":82.85714285714286,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(Events.event_name)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Events\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"event_name\"}},\"Function\":3},\"Name\":\"Min(Events.event_name)\",\"NativeReferenceName\":\"First event_name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"40D\"}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.86,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "BinarySource",
+            "formatSettings": {
+              "type": "BinaryReadSettings"
+            },
+            "storeSettings": {
+              "type": "AzureBlobFSReadSettings",
+              "recursive": true
+            },
+            "datasetSettings": {
+              "type": "Binary",
+              "typeProperties": {
+                "location": {
+                  "type": "AzureBlobFSLocation",
+                  "fileSystem": "contfabric",
+                  "fileName": "Bosnia.txt"
+                }
+              },
+              "externalReferences": {
+                "connection": "3c23400a-cdae-4eb5-aefe-c2ef9291c83c"
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "BinarySink",
+            "storeSettings": {
+              "type": "LakehouseWriteSettings"
+            },
+            "datasetSettings": {
+              "type": "Binary",
+              "typeProperties": {
+                "location": {
+                  "type": "LakehouseLocation",
+                  "folderPath": "raw_data"
+                }
+              },
+              "linkedService": {
+                "name": "LH_IAC",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "9b9b7c16-48a6-4480-8120-6c5336184656",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Files"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Copy data1",
+        "dependsOn": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "lastModified": null,
+  "formatVersion": "202409",
+  "editingSession": {
+    "computeEngineSettings": {},
+    "editingSessionMashup": {
+      "mashupName": "Dataflow 5",
+      "queryGroups": [],
+      "documentLocale": "en-US",
+      "queriesMetadata": {
+        "shishi_israeli_raw_data_pipe": {
+          "queryId": "e3bf6f9f-d418-4270-93a5-fbd74a0d0e00",
+          "queryName": "shishi_israeli_raw_data_pipe",
+          "queryGroupId": null,
+          "entityName": null,
+          "lastKnownIsCalculatedEntity": null,
+          "lastKnownIsLinkedEntity": null,
+          "lastKnownIsParameter": null,
+          "isHidden": false,
+          "lastKnownResultTypeName": null,
+          "loadEnabled": true,
+          "fieldsMetadata": {},
+          "deleteExistingDataOnLoad": false,
+          "hostProperties": {},
+          "jsonOutputDestinations": "{\"Destinations\":[{\"UpdateMethod\":{\"Kind\":\"Replace\"},\"ColumnMappings\":{\"Kind\":\"Fixed\",\"ColumnMappingPairs\":[{\"SourceColumnName\":\"order_id\",\"DestinationColumnName\":\"order_id\"},{\"SourceColumnName\":\"order_date\",\"DestinationColumnName\":\"order_date\"},{\"SourceColumnName\":\"attendee_first_name\",\"DestinationColumnName\":\"attendee_first_name\"},{\"SourceColumnName\":\"attendee_last_name\",\"DestinationColumnName\":\"attendee_last_name\"},{\"SourceColumnName\":\"attendee_email\",\"DestinationColumnName\":\"attendee_email\"},{\"SourceColumnName\":\"phone_number\",\"DestinationColumnName\":\"phone_number\"},{\"SourceColumnName\":\"purchaser_city\",\"DestinationColumnName\":\"purchaser_city\"},{\"SourceColumnName\":\"purchaser_state\",\"DestinationColumnName\":\"purchaser_state\"},{\"SourceColumnName\":\"purchaser_country\",\"DestinationColumnName\":\"purchaser_country\"},{\"SourceColumnName\":\"event_name\",\"DestinationColumnName\":\"event_name\"},{\"SourceColumnName\":\"event_id\",\"DestinationColumnName\":\"event_id\"},{\"SourceColumnName\":\"event_start_date\",\"DestinationColumnName\":\"event_start_date\"},{\"SourceColumnName\":\"event_start_time\",\"DestinationColumnName\":\"event_start_time\"},{\"SourceColumnName\":\"event_timezone\",\"DestinationColumnName\":\"event_timezone\"},{\"SourceColumnName\":\"event_location\",\"DestinationColumnName\":\"event_location\"},{\"SourceColumnName\":\"ticket_quantity\",\"DestinationColumnName\":\"ticket_quantity\"},{\"SourceColumnName\":\"ticket_tier\",\"DestinationColumnName\":\"ticket_tier\"},{\"SourceColumnName\":\"ticket_type\",\"DestinationColumnName\":\"ticket_type\"},{\"SourceColumnName\":\"currency\",\"DestinationColumnName\":\"currency\"},{\"SourceColumnName\":\"ticket_price\",\"DestinationColumnName\":\"ticket_price\"},{\"SourceColumnName\":\"buyer_first_name\",\"DestinationColumnName\":\"buyer_first_name\"},{\"SourceColumnName\":\"buyer_last_name\",\"DestinationColumnName\":\"buyer_last_name\"},{\"SourceColumnName\":\"buyer_email\",\"DestinationColumnName\":\"buyer_email\"}]},\"Destination\":{\"Kind\":\"Script\",\"Script\":\"let\\r\\n  Pattern = Fabric.Warehouse([CreateNavigationProperties = false]),\\r\\n  Navigation_1 = Pattern{[workspaceId = \\\"bd19bfc8-033a-4b67-b80c-e8c4cbdc21ce\\\"]}[Data],\\r\\n  Navigation_2 = Navigation_1{[warehouseId = \\\"7b1ad793-cb5b-4a9e-90bb-1b2b5e0d7446\\\"]}[Data],\\r\\n  TableNavigation = Navigation_2{[Schema = \\\"dbo\\\", Item = \\\"shishi_israeli_raw_data_pipe\\\"]}[Data]\\r\\nin\\r\\n  TableNavigation\",\"IsNewTarget\":false}}]}",
+          "bindToDefaultOutputDestination": null,
+          "jsonIncrementalRefreshSettings": null
+        }
+      },
+      "connectionOverrides": [
+        {
+          "path": "Lakehouse",
+          "kind": "Lakehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"ed29a0ce-b271-49de-bd17-51261cc2a3b6\",\"DatasourceId\":\"be4393a6-3811-4f5b-b3ab-7cfa333a957b\"}",
+          "credentialDetails": {},
+          "connectionParameters": {}
+        },
+        {
+          "path": "Warehouse",
+          "kind": "Warehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"ed29a0ce-b271-49de-bd17-51261cc2a3b6\",\"DatasourceId\":\"ba6b5a9d-238a-42f6-9100-61e245433d47\"}",
+          "credentialDetails": {},
+          "connectionParameters": {}
+        }
+      ],
+      "trustedConnections": [
+        {
+          "path": "Warehouse",
+          "kind": "Warehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"ed29a0ce-b271-49de-bd17-51261cc2a3b6\",\"DatasourceId\":\"ba6b5a9d-238a-42f6-9100-61e245433d47\"}",
+          "credentialDetails": {},
+          "connectionParameters": {}
+        }
+      ],
+      "useHostConnectionProvider": false,
+      "fastCombine": false,
+      "allowNativeQueries": true,
+      "skipAutomaticTypeAndHeaderDetection": false,
+      "hostProperties": {
+        "dataflowRefreshOutputFileFormat": "Parquet",
+        "enableDateTimeFieldsForStaging": "true",
+        "enablePublishWithoutLoadedQueries": "true"
+      }
+    }
+  }
+}

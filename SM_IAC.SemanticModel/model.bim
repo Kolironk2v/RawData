@@ -1,0 +1,690 @@
+{
+  "compatibilityLevel": 1604,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.139.7496.1 (Main)+061188de2d27b556d0c15d8f70c4426f68783390"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DatabaseQuery\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"WebModelingEdit\",\"RemoteModeling\",\"DevMode\"]"
+      }
+    ],
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "False"
+          },
+          {
+            "name": "PBI_RemovedChildren",
+            "value": "[{\"remoteItemId\":{\"analysisServicesObject\":{\"sourceName\":null,\"sourceLineageTag\":\"[dbo].[shishi_israeli_raw_data]\"}},\"objectType\":\"Table\"},{\"remoteItemId\":{\"analysisServicesObject\":{\"sourceName\":null,\"sourceLineageTag\":\"[IAC].[test]\"}},\"objectType\":\"Table\"}]"
+          }
+        ],
+        "expression": [
+          "let",
+          "    database = Sql.Database(\"KWAY5XD232PEPHBAYMI6WC3EYI-ZC7RTPJ2ANTUXOAM5DCMXXBBZY.datawarehouse.fabric.microsoft.com\", \"7b1ad793-cb5b-4a9e-90bb-1b2b5e0d7446\")",
+          "in",
+          "    database"
+        ],
+        "kind": "m",
+        "lineageTag": "fb83b81f-1731-49bc-995e-4e9e905c7cde"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "40dfc526-a960-57aa-827f-6b4978f2efab",
+        "fromColumn": "TicketKey",
+        "fromTable": "Sales",
+        "relyOnReferentialIntegrity": true,
+        "toColumn": "TicketKey",
+        "toTable": "Tickets"
+      },
+      {
+        "name": "7e905078-77ec-b78a-6423-2097054de6b8",
+        "fromColumn": "AttendeeKey",
+        "fromTable": "Sales",
+        "relyOnReferentialIntegrity": true,
+        "toColumn": "AttendeeKey",
+        "toTable": "Attendees"
+      },
+      {
+        "name": "6cf2dab1-b8e0-fc04-d77f-d6f9c4d8d871",
+        "fromColumn": "EventKey",
+        "fromTable": "Sales",
+        "relyOnReferentialIntegrity": true,
+        "toColumn": "EventKey",
+        "toTable": "Events"
+      },
+      {
+        "name": "7d6d4876-d453-d049-570d-ffab79c627f1",
+        "fromColumn": "DateKey",
+        "fromTable": "Sales",
+        "relyOnReferentialIntegrity": true,
+        "toColumn": "DateKey",
+        "toTable": "Date"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Tickets",
+        "columns": [
+          {
+            "name": "TicketKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b102e5b5-7666-4c42-9d49-788494a500ae",
+            "sourceColumn": "TicketKey",
+            "sourceLineageTag": "TicketKey",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ticket_type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0a9d32ae-a85a-466c-be52-e04cf34ffb17",
+            "sourceColumn": "ticket_type",
+            "sourceLineageTag": "ticket_type",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ticket_price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-US\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "48c48604-dbd1-4c41-bf79-48a1500fc902",
+            "sourceColumn": "ticket_price",
+            "sourceLineageTag": "ticket_price",
+            "sourceProviderType": "decimal(5, 2)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "currency",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fb5a5cf4-867e-47d3-a70f-128c96213333",
+            "sourceColumn": "currency",
+            "sourceLineageTag": "currency",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a3c07559-471d-4d2f-a66d-8d02fbc88db1",
+            "sourceColumn": "description",
+            "sourceLineageTag": "description",
+            "sourceProviderType": "varchar(1)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "29ff65c3-6afa-4d49-bced-92c86326bae0",
+        "partitions": [
+          {
+            "name": "Tickets",
+            "mode": "directLake",
+            "source": {
+              "entityName": "Tickets",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "IAC",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[IAC].[Tickets]"
+      },
+      {
+        "name": "Attendees",
+        "columns": [
+          {
+            "name": "AttendeeKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3bb43a15-e515-4652-8788-154f8e301c66",
+            "sourceColumn": "AttendeeKey",
+            "sourceLineageTag": "AttendeeKey",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9b145dce-c7a1-469c-bae5-af8308fa21a9",
+            "sourceColumn": "order_id",
+            "sourceLineageTag": "order_id",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "attendee_first_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f2bfc7a3-db06-467d-ba6d-1bd693d41130",
+            "sourceColumn": "attendee_first_name",
+            "sourceLineageTag": "attendee_first_name",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "attendee_last_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "70b303cc-7b61-48ea-9e26-e2b25d9be6e3",
+            "sourceColumn": "attendee_last_name",
+            "sourceLineageTag": "attendee_last_name",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "attendee_email",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a306094e-694a-46db-856a-bca22c795482",
+            "sourceColumn": "attendee_email",
+            "sourceLineageTag": "attendee_email",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "phone_number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e53119bd-a061-4894-bdb6-78b5f75febc5",
+            "sourceColumn": "phone_number",
+            "sourceLineageTag": "phone_number",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchaser_city",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f20b461f-a82e-4e5c-ae3d-9ff62bce7e65",
+            "sourceColumn": "purchaser_city",
+            "sourceLineageTag": "purchaser_city",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "purchaser_country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "879e1eea-3667-4b8c-94d6-790c9b706b3d",
+            "sourceColumn": "purchaser_country",
+            "sourceLineageTag": "purchaser_country",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "d15d1b72-8764-4b94-aa29-fb0a53f2065a",
+        "partitions": [
+          {
+            "name": "Attendees",
+            "mode": "directLake",
+            "source": {
+              "entityName": "Attendees",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "IAC",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[IAC].[Attendees]"
+      },
+      {
+        "name": "Events",
+        "columns": [
+          {
+            "name": "EventKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "492a90c5-be37-47f5-95ac-6d01f79a7cb9",
+            "sourceColumn": "EventKey",
+            "sourceLineageTag": "EventKey",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "event_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "48c9ff08-ad68-40a6-a1cd-2764264ce292",
+            "sourceColumn": "event_name",
+            "sourceLineageTag": "event_name",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "event_location",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "99a85909-2c5f-4ebe-8e89-ff40ea510225",
+            "sourceColumn": "event_location",
+            "sourceLineageTag": "event_location",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "event_start_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "2446b452-0f09-4a4b-a0c6-4441422261a2",
+            "sourceColumn": "event_start_date",
+            "sourceLineageTag": "event_start_date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "event_start_time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "da4ca3e0-e588-4d80-adaa-cf793653e541",
+            "sourceColumn": "event_start_time",
+            "sourceLineageTag": "event_start_time",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "event_timezone",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b4f0a462-9c50-43e0-a156-e4a8ae5e73b4",
+            "sourceColumn": "event_timezone",
+            "sourceLineageTag": "event_timezone",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "7bb29268-5edf-463d-af9b-41e18e297cee",
+        "partitions": [
+          {
+            "name": "Events",
+            "mode": "directLake",
+            "source": {
+              "entityName": "Events",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "IAC",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[IAC].[Events]"
+      },
+      {
+        "name": "Sales",
+        "columns": [
+          {
+            "name": "OrderId",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "90461aac-4224-48d7-855e-ce1a14f0ffde",
+            "sourceColumn": "OrderId",
+            "sourceLineageTag": "OrderId",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "DateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2867d45c-69e7-490d-91fb-9354484643a9",
+            "sourceColumn": "DateKey",
+            "sourceLineageTag": "DateKey",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EventKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c7c1cce9-5ca3-4c7b-8a51-f0090d33a77e",
+            "sourceColumn": "EventKey",
+            "sourceLineageTag": "EventKey",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AttendeeKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "86c1c1fa-fe3a-4619-95ef-d8152a11f45d",
+            "sourceColumn": "AttendeeKey",
+            "sourceLineageTag": "AttendeeKey",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TicketKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8399fc3f-190e-4c1f-ad96-b3a1e8440591",
+            "sourceColumn": "TicketKey",
+            "sourceLineageTag": "TicketKey",
+            "sourceProviderType": "bigint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "order_time",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "9360f6a0-b1c1-47bf-9c1f-aa14ec31ffcd",
+            "sourceColumn": "order_time",
+            "sourceLineageTag": "order_time",
+            "sourceProviderType": "time",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ticket_quantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6500292a-ceb4-4160-ac26-6952405a5c3b",
+            "sourceColumn": "ticket_quantity",
+            "sourceLineageTag": "ticket_quantity",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ticket_price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-US\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "219901b4-184c-49c7-aa06-bffc9187ca3f",
+            "sourceColumn": "ticket_price",
+            "sourceLineageTag": "ticket_price",
+            "sourceProviderType": "decimal(5, 2)",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "30ddcbd5-28f1-45ea-9963-4147a339ab2e",
+        "measures": [
+          {
+            "name": "Measure",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-US\"}"
+              }
+            ],
+            "expression": "SUM(Sales[ticket_price])",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "c1b2dbca-f24b-4cb0-99cf-be89da042a53"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Sales",
+            "mode": "directLake",
+            "source": {
+              "entityName": "Sales",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "IAC",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[IAC].[Sales]"
+      },
+      {
+        "name": "Date",
+        "columns": [
+          {
+            "name": "DateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "lineageTag": "b862cfb4-7977-4828-84a9-5691e02644e4",
+            "sourceColumn": "DateKey",
+            "sourceLineageTag": "DateKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isKey": true,
+            "isNullable": false,
+            "lineageTag": "af119b37-5de9-4c8c-85ad-4b15d4fa6bb4",
+            "sourceColumn": "Date",
+            "sourceLineageTag": "Date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Full Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3e70f536-a154-4ae5-b751-6fcce8d69723",
+            "sourceColumn": "Full Date",
+            "sourceLineageTag": "Full Date",
+            "sourceProviderType": "varchar(100)",
+            "summarizeBy": "none"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "8ff62b88-f253-4553-8c71-d6eb83f0765b",
+        "partitions": [
+          {
+            "name": "Date",
+            "mode": "directLake",
+            "source": {
+              "entityName": "Date",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "IAC",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[IAC].[Date]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "id": "3434bc6c-0761-4b76-84ef-94fb22954b96",
+      "name": "bic",
+      "type": "SampleData",
+      "properties": {
+        "type": "Bicycles"
+      }
+    }
+  ],
+  "destinations": [],
+  "streams": [
+    {
+      "id": "82d5d7a6-178d-433c-b8a2-85ae2286d0ae",
+      "name": "test_git-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "bic"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.0"
+}
